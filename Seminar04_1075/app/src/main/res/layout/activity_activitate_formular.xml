@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--&lt;!&ndash;LinearLayout !!!&ndash;&gt;-->
+<!--&lt;!&ndash;    android:orientation="vertical" intre-->
+<!-- layout width si height&ndash;&gt;-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/main"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".ActivitateFormular">-->
+
+
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Marca tricou:"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        />-->
+
+<!--    <EditText-->
+<!--        android:id = "@+id/nume_et"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="@string/exemplu_adidas"-->
+<!--        android:layout_marginBottom="30dp" />-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/esteZi_CB"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/este_nou"-->
+<!--        android:layout_marginBottom="15dp"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Selecteaza Marimea:"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        />-->
+
+
+
+<!--    <Spinner-->
+
+<!--        android:id="@+id/spinnerMarimi"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:entries="@array/marimi"-->
+<!--        android:text = "Selecteaza marimea:"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:spinnerMode="dropdown" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text = "Calitate:"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        />-->
+
+
+
+<!--    <RatingBar-->
+<!--        android:id="@+id/rating"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="30dp"/>-->
+
+
+
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:onClick="culegeDate"-->
+<!--        android:text="@string/apasa" />-->
+
+
+
+
+
+<!--</LinearLayout>-->
+
+
+
+<!--DESIGN FACUT DE AI MAI JOS-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adaugă un produs nou"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/nume_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nume produs (ex: Tricou Polo)"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selectează mărimea:"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp" />
+
+    <Spinner
+        android:id="@+id/spinnerMarimi"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#1A000000"
+        android:entries="@array/marimi"
+        android:layout_marginBottom="16dp" />
+
+    <CheckBox
+        android:id="@+id/esteZi_CB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Este produsul nou?"
+        android:textSize="16sp"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acordă un rating:"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp" />
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvează și Trimite"
+        android:textSize="16sp"
+        android:onClick="culegeDate"
+        android:minHeight="48dp" />
+
+</LinearLayout>

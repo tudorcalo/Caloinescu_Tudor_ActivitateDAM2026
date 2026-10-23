@@ -1,0 +1,21 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id button
+id button2
+id main
+layout activity_activitate_rezultat
+layout activity_main
+layout activity_noua_activitate
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string deschide_activitate
+string inapoi
+style Base.Theme.Seminar02V2_1075
+style Theme.Seminar02V2_1075
+xml backup_rules
+xml data_extraction_rules

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Seminar04_1075</string>
+    <string name="apasa">Apasa</string>
+    <string name="exemplu_ion">Exemplu: Ion</string>
+    <string name="exemplu_adidas">Exemplu: Adidas</string>
+    <string name="este_nou">Este nou?</string>
+    <string-array name="marimi">
+        <item> S </item>
+        <item> M </item>
+        <item> L </item>
+        <item> XL </item>
+        <item> XXL </item>
+    </string-array>
+
+</resources>

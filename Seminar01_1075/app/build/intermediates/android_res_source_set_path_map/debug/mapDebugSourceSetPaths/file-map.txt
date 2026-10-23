@@ -1,0 +1,8 @@
+ro.ase.dam.seminar1_1075.app-pngs-0 C:\Users\acasa\Desktop\Caloinescu_Tudor_ActivitateDAM2026\Seminar01_1075\app\build\generated\res\pngs\debug
+ro.ase.dam.seminar1_1075.app-updated_navigation_xml-1 C:\Users\acasa\Desktop\Caloinescu_Tudor_ActivitateDAM2026\Seminar01_1075\app\build\generated\updated_navigation_xml\debug
+ro.ase.dam.seminar1_1075.app-packageDebugResources-2 C:\Users\acasa\Desktop\Caloinescu_Tudor_ActivitateDAM2026\Seminar01_1075\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+ro.ase.dam.seminar1_1075.app-packageDebugResources-3 C:\Users\acasa\Desktop\Caloinescu_Tudor_ActivitateDAM2026\Seminar01_1075\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+ro.ase.dam.seminar1_1075.app-debug-4 C:\Users\acasa\Desktop\Caloinescu_Tudor_ActivitateDAM2026\Seminar01_1075\app\build\intermediates\merged_res\debug\mergeDebugResources
+ro.ase.dam.seminar1_1075.app-debug-5 C:\Users\acasa\Desktop\Caloinescu_Tudor_ActivitateDAM2026\Seminar01_1075\app\src\debug\res
+ro.ase.dam.seminar1_1075.app-main-6 C:\Users\acasa\Desktop\Caloinescu_Tudor_ActivitateDAM2026\Seminar01_1075\app\src\main\res
+gradleHome-0 C:\Users\acasa\.gradle

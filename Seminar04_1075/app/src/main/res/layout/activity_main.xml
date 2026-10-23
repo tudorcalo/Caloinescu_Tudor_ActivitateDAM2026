@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/main"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text = "Deschide form"-->
+<!--        android:layout_marginTop="350dp"-->
+<!--        android:onClick="deschideForm"-->
+<!--        android:layout_marginBottom="100dp"/>-->
+<!--    -->
+<!--    <TextView-->
+<!--        android:id = "@+id/tb_rezultat"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Tricou:" />-->
+<!--        -->
+<!--</LinearLayout>-->
+
+
+<!--design facut de ai mai jos-->
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="top|center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestiune Obiecte"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adaugă un obiect nou"
+        android:textSize="16sp"
+        android:onClick="deschideForm"
+        android:minHeight="56dp"
+        android:layout_marginBottom="48dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ultimele date adăugate:"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Aici se vor afisa datele din obiectul Tricou -->
+    <TextView
+        android:id="@+id/tb_rezultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120dp"
+        android:background="#1A000000"
+        android:padding="16dp"
+        android:text="Niciun obiect creat încă."
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+</LinearLayout>

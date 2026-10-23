@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Seminar02V2_1075</string>
+    <string name="deschide_activitate">Deschide Activitate</string>
+    <string name="inapoi">Inapoi</string>
+    <style name="Base.Theme.Seminar02V2_1075" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Seminar02V2_1075" parent="Base.Theme.Seminar02V2_1075"/>
+</resources>
