@@ -154,11 +154,13 @@
         android:layout_marginBottom="32dp" />
 
     <Button
+        android:id = "@+id/btn_salveaza"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Salvează și Trimite"
         android:textSize="16sp"
-        android:onClick="culegeDate"
+
+
         android:minHeight="48dp" />
 
 </LinearLayout>
