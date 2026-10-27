@@ -4,6 +4,7 @@
     <string name="exemplu_ion">Exemplu: Ion</string>
     <string name="exemplu_adidas">Exemplu: Adidas</string>
     <string name="este_nou">Este nou?</string>
+    <string name="meniu_principal">Meniu principal</string>
     <string-array name="marimi">
         <item> S </item>
         <item> M </item>
