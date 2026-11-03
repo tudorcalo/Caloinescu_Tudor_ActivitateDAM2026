@@ -1,6 +1,7 @@
 package com.example.seminar04_1075;
 
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.text.Layout;
 import android.view.View;
 import android.widget.AdapterView;
@@ -20,6 +21,7 @@ import java.util.ArrayList;
 public class ActivitateListare extends AppCompatActivity {
 
     ArrayList<Tricou> listaPrimita;
+    private TricouAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,20 +34,20 @@ public class ActivitateListare extends AppCompatActivity {
         });
 
 
-        listaPrimita = (ArrayList<Tricou>) getIntent().getSerializableExtra("lista_tricouri");
+        listaPrimita = getIntent().getParcelableArrayListExtra("lista_tricouri");
 
         if (listaPrimita == null) {
             listaPrimita = new ArrayList<>();
         }
 
-
+        adapter = new TricouAdapter(listaPrimita, getApplicationContext(), R.layout.item_layout);
 
 //
-        ArrayAdapter<Tricou> adapter = new ArrayAdapter<>(
-                this,
-                android.R.layout.simple_list_item_1,
-                listaPrimita
-        );
+//        ArrayAdapter<Tricou> adapter = new ArrayAdapter<>(
+//                this,
+//                android.R.layout.simple_list_item_1,
+//                listaPrimita
+//        );
         ListView listView=findViewById(R.id.listView);
         listView.setAdapter(adapter);
 

@@ -47,7 +47,7 @@ public class ActivitateFormular extends AppCompatActivity {
                 Intent it = new Intent();
 
                 Bundle bundle = new Bundle();
-                bundle.putSerializable("Tricou", tricou);
+                bundle.putParcelable("Tricou", tricou);
                 it.putExtras(bundle);
 
                 setResult(RESULT_OK, it);

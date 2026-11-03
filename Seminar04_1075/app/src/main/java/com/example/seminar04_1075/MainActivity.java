@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ActivitateListare.class);
-                intent.putExtra("lista_tricouri", (ArrayList<Tricou>) lista);
+                intent.putParcelableArrayListExtra("lista_tricouri", (ArrayList<Tricou>) lista);
                 startActivity(intent);
             }
         });
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data, caller);
         if (requestCode == 1 && resultCode == RESULT_OK && data != null)
         {
-            Tricou tr = (Tricou) data.getSerializableExtra("Tricou");
+            Tricou tr = (Tricou) data.getParcelableExtra("Tricou");
             if (tr != null)
             {
                 TextView text = findViewById(R.id.tb_rezultat);
