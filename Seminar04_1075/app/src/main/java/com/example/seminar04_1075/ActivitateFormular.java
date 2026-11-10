@@ -29,14 +29,33 @@ public class ActivitateFormular extends AppCompatActivity {
         });
 
 
+        EditText et = findViewById(R.id.nume_et);
+        CheckBox cb = findViewById(R.id.esteZi_CB);
+        Spinner sp = findViewById(R.id.spinnerMarimi);
+        RatingBar rat = findViewById(R.id.rating);
+
+
+        Tricou tricouPrimit = getIntent().getParcelableExtra("Tricou");
+        if (tricouPrimit != null) {
+            et.setText(tricouPrimit.getMarca());
+            cb.setChecked(tricouPrimit.isEsteNou());
+            rat.setRating(tricouPrimit.getRating());
+
+
+            for (int i = 0; i < sp.getCount(); i++) {
+                if (sp.getItemAtPosition(i).toString().equals(tricouPrimit.getMarime())) {
+                    sp.setSelection(i);
+                    break;
+                }
+            }
+        }
+
+
         Button btnSalveaza = findViewById(R.id.btn_salveaza);
         btnSalveaza.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText et = findViewById(R.id.nume_et);
-                CheckBox cb = findViewById(R.id.esteZi_CB);
-                Spinner sp = findViewById(R.id.spinnerMarimi);
-                RatingBar rat = findViewById(R.id.rating);
+
 
                 String nume = et.getText().toString();
                 Boolean esteNou = cb.isChecked();

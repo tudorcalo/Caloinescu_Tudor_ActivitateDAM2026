@@ -58,6 +58,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        Button btnImagini = findViewById(R.id.btn_imagini);
+        btnImagini.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ActivitateImagini.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 

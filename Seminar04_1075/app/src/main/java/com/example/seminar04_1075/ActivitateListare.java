@@ -1,5 +1,6 @@
 package com.example.seminar04_1075;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.text.Layout;
@@ -11,6 +12,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -22,6 +24,8 @@ public class ActivitateListare extends AppCompatActivity {
 
     ArrayList<Tricou> listaPrimita;
     private TricouAdapter adapter;
+
+    private int idModificat = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +60,12 @@ public class ActivitateListare extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Tricou tricouSelectat = listaPrimita.get(position);
+
+                Intent intentModifica = new Intent(ActivitateListare.this, ActivitateFormular.class);
+                intentModifica.putExtra("Tricou", tricouSelectat);
+                idModificat = position;
+                startActivityForResult(intentModifica, 209);
+
                 Toast.makeText(ActivitateListare.this, tricouSelectat.toString(), Toast.LENGTH_LONG).show();
             }
         });
@@ -78,5 +88,17 @@ public class ActivitateListare extends AppCompatActivity {
             }
         });
 
+
     }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK && data != null) {
+            if (requestCode == 209) {
+                listaPrimita.set(idModificat, data.getParcelableExtra("Tricou"));
+                adapter.notifyDataSetChanged();
+            }
+        }}
 }

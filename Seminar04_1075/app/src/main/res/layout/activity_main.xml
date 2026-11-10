@@ -88,4 +88,12 @@
         android:textColor="#333333"
         android:textSize="18sp" />
 
+
+    <Button
+        android:id="@+id/btn_imagini"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Deschide Lista Imagini" />
+
 </LinearLayout>
