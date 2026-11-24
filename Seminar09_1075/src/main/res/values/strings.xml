@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Seminar09_1075</string>
+    <string-array name="prognoza">
+        <item>1day</item>
+        <item>5day</item>
+    </string-array>
+</resources>

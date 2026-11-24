@@ -63,6 +63,7 @@ public class ActivitateFormular extends AppCompatActivity {
                 float rating = rat.getRating();
 
                 Tricou tricou = new Tricou(nume, marime, esteNou, rating);
+
                 Intent it = new Intent();
 
                 Bundle bundle = new Bundle();

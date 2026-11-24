@@ -21,3 +21,4 @@ include(":Seminar02_1075:app")
 include(":Seminar03_1075:app")
 include(":Seminar04_1075:app")
 
+include(":Seminar09_1075")
